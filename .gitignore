@@ -1,0 +1,43 @@
+
+# secrets file
+.env
+
+# ssl certificates
+aspnetapp.pfx
+
+# Ignore build results
+bin/
+obj/
+
+# User-specific files
+*.user
+*.userosscache
+*.suo
+*.sln.docstates
+
+# Rider files
+.idea/
+*.sln.iml
+
+# Mac and Linux file system files
+.DS_Store
+*.swp
+
+# Visual Studio Code files
+.vscode/
+
+# Dotnet specific files
+project.lock.json
+project.fragment.lock.json
+
+# Logs
+*.log
+
+# Exclude files and folders related to dependency packages
+packages/
+*.nupkg
+*.snupkg
+*.Symbols.nupkg
+
+# Resharper settings
+.ReSharper*/

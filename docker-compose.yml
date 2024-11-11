@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+  superhero-api:
+    image: amfm-dev/superhero-api:latest
+    build: .
+    ports:
+      - "5000:5000"
+      - "5001:5001"
+    environment:
+      ASPNETCORE_Kestrel__Certificates__Default__Password: ${ASPNETCORE_Kestrel__Certificates__Default__Password}
