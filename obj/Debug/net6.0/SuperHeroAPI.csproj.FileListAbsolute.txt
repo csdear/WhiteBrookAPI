@@ -25,3 +25,11 @@ E:\Repos\SuperHeroAPI\obj\Debug\net6.0\refint\SuperHeroAPI.dll
 E:\Repos\SuperHeroAPI\obj\Debug\net6.0\SuperHeroAPI.pdb
 E:\Repos\SuperHeroAPI\obj\Debug\net6.0\SuperHeroAPI.genruntimeconfig.cache
 E:\Repos\SuperHeroAPI\obj\Debug\net6.0\ref\SuperHeroAPI.dll
+E:\Repos\SuperHeroAPI\bin\Debug\net6.0\Humanizer.dll
+E:\Repos\SuperHeroAPI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+E:\Repos\SuperHeroAPI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+E:\Repos\SuperHeroAPI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+E:\Repos\SuperHeroAPI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+E:\Repos\SuperHeroAPI\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+E:\Repos\SuperHeroAPI\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+E:\Repos\SuperHeroAPI\bin\Debug\net6.0\System.Diagnostics.DiagnosticSource.dll
