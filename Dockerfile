@@ -20,7 +20,6 @@ EXPOSE 5001
 # Set environment variables for HTTPS
 ENV ASPNETCORE_URLS="http://+:5000;https://+:5001"
 ENV ASPNETCORE_Kestrel__Certificates__Default__Path=/https/aspnetapp.pfx
-# ENV ASPNETCORE_Kestrel__Certificates__Default__Password=raedDEAR34!
 
 ENTRYPOINT ["dotnet", "SuperHeroAPI.dll"]
 
