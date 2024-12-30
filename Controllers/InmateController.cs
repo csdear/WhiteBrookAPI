@@ -24,6 +24,17 @@ namespace WhiteBrookAPI.Controllers
             _InmateService = InmateService;
         }
 
+         /// <summary>
+        /// Health check endpoint to verify the API is running.
+        /// </summary>
+        /// <returns>Returns a status message indicating the health of the API.</returns>
+        [HttpGet]
+        [Route("health")]
+        public IActionResult HealthCheck()
+        {
+            return Ok(new { Status = "Healthy", Message = "API is running smoothly." });
+        }
+
         /// <summary>
         /// Get All Inmates.
         /// </summary>
