@@ -2,10 +2,6 @@
 
 Sample .Net 8.0 web api project running in docker
 
-Run Docker :
-		http://localhost:5000/index.html
-		https://localhost:5001/index.html
-
 		Requirements/ Preliminaries
 			- Docker Desktop running as Linux containers. Required for images dotnet/sdk:8.0-jammy and dotnet/aspnet:8.0-jammy.
 			- OpenSSL
