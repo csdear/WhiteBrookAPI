@@ -1,4 +1,4 @@
-namespace SuperHeroAPI;
+namespace WhiteBrookAPI;
 
 public class WeatherForecast
 {

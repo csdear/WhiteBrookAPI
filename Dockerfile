@@ -1,12 +1,18 @@
-# Build Stage
-FROM mcr.microsoft.com/dotnet/sdk:6.0-focal AS build
+# Build Stage - SDK Image
+# FROM mcr.microsoft.com/dotnet/sdk:6.0-focal AS build
+FROM mcr.microsoft.com/dotnet/sdk:8.0-jammy AS build
+# FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
+
 WORKDIR /source
 COPY . .
-RUN dotnet restore "./SuperHeroAPI.csproj" --disable-parallel
-RUN dotnet publish "./SuperHeroAPI.csproj" -c release -o /app --no-restore
+RUN dotnet restore "./WhiteBrookAPI.csproj" --disable-parallel
+RUN dotnet publish "./WhiteBrookAPI.csproj" -c release -o /app --no-restore
 
-# Serve Stage
-FROM mcr.microsoft.com/dotnet/aspnet:6.0-focal
+# Serve Stage - aspnet runtime image
+# FROM mcr.microsoft.com/dotnet/aspnet:6.0-focal
+FROM mcr.microsoft.com/dotnet/aspnet:8.0-jammy AS base
+# FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS base
+
 WORKDIR /app
 COPY --from=build /app ./
 
@@ -21,4 +27,5 @@ EXPOSE 5001
 ENV ASPNETCORE_URLS="http://+:5000;https://+:5001"
 ENV ASPNETCORE_Kestrel__Certificates__Default__Path=/https/aspnetapp.pfx
 
-ENTRYPOINT ["dotnet", "SuperHeroAPI.dll"]
+ENTRYPOINT ["dotnet", "WhiteBrookAPI.dll"]
+

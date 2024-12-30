@@ -2,8 +2,12 @@
 # secrets file
 .env
 
-# ssl certificates
+# Ignore certificate files
 aspnetapp.pfx
+aspnetapp.crt
+*.pfx
+*.crt
+*.key
 
 # Ignore build results
 bin/
