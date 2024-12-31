@@ -43,7 +43,7 @@ if (app.Environment.IsDevelopment() || app.Environment.IsProduction())
     app.UseSwaggerUI(c =>
     {
         c.SwaggerEndpoint("/swagger/v1/swagger.json", "WhiteBrookAPI V1");
-        c.RoutePrefix = string.Empty;  // Serves Swagger UI at the root If you want Swagger to be available at /swagger instead of the root, change the RoutePrefix: c.RoutePrefix = "swagger";With this, Swagger UI would be accessible at http://localhost:5000/swagger or https://localhost:5001/swagger
+        c.RoutePrefix = string.Empty;  // string.Empty Serves Swagger UI at the root If you want Swagger to be available at /swagger instead of the root, change the RoutePrefix: c.RoutePrefix = "swagger";With this, Swagger UI would be accessible at http://localhost:5000/swagger or https://localhost:5001/swagger
     });
 }
 
