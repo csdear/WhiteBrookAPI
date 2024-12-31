@@ -1,7 +1,9 @@
 # WhiteBrookAPI
 
 Sample .Net 8.0 web api project running in docker
-
+	- https://WhiteBrookISC@dev.azure.com/WhiteBrookISC/InmateTrackerPOC/_git/InmateTrackerPOC
+	- https://github.com/csdear/WhiteBrookAPI.git
+	
 		Requirements/ Preliminaries
 			- Docker Desktop running as Linux containers. Required for images dotnet/sdk:8.0-jammy and dotnet/aspnet:8.0-jammy.
 			- OpenSSL
